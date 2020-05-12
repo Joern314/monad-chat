@@ -1,4 +1,4 @@
-## A Functional Chat for Real Mathematicians
+# A Functional Chat for Real Mathematicians
 
 This chat is the greatest chat ever.
 
@@ -12,7 +12,14 @@ cd monad-chat
 npm install
 ```
 
-### For Developers: VSCode
+### Building
+
+To build the code run the `build`-task in npm:
+```
+npm run build
+```
+
+### VSCode
 
 To setup VSCode for development in PureScript the extensions 
 ```
@@ -25,17 +32,24 @@ are recommended. The configuration file `.vscode/settings.json` should make them
 
 Similar extensions are available for emacs, vim, atom, ...
 
-### Building
+### Adding new Modules
 
-To build the code run the `build`-task in npm:
+Javascript modules can be added and installed with
 ```
-npm run build
+npm install <module> --save
 ```
-
-### Installing new Modules
-
-Javascript modules can be installed with
-```npm install --save```
 
 PureScript modules are added as dependencies in `spago.dhall`. They are installed with
-```npm run postinstall``` which is also triggered by ```npm install```.
+```
+npm run postinstall
+```
+
+### Local Testing
+
+TODO: implement local testing of frontend+backend
+
+### Deployment
+
+TODO: implement deployment for production.
+
+* does docker offer safety benefits?
