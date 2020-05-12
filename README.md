@@ -35,9 +35,7 @@ npm run build
 ### Installing new Modules
 
 Javascript modules can be installed with
-```
-npm install --save
-```
+```npm install --save```
 
 PureScript modules are added as dependencies in `spago.dhall`. They are installed with
-`npm run postinstall` which is also triggered by `npm install`.
+```npm run postinstall``` which is also triggered by ```npm install```.
