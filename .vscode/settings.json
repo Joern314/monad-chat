@@ -1,0 +1,7 @@
+{
+    "purty.pathToPurty": "yarn run --silent purty",
+    "purescript.addSpagoSources": true,
+    "purescript.buildCommand": "spago build --purs-args --json-errors",
+    "purescript.addNpmPath": true,
+    "purescript.addPscPackageSources": true
+}
